@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+function range(){
+	var mid = Math.round(Math.random()*100);
+	var min = mid - Math.round(Math.random()*100);
+	
+	if(min<4){
+		min=4-min;
+	}
+
+	var max = mid + Math.round(Math.random()*100)
+	if(min>max){
+		var aux = min;
+		min = max;
+		max = aux;
+	}
+	if(max-min<mid){
+		max = max + 30;
+	}
+
+	return [min,max];   
+}
+
+let intervalo = range();
+
+document.write(intervalo[0]);
+document.write("<br>",intervalo[1]);
+
+</script>

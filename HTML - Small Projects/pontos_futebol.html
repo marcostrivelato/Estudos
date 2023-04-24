@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+
+<h1>Transformando char em int</h1>
+
+<script>
+	var vitorias = parseInt(prompt("Insira o número de vitórias"));
+	var empates = parseInt(prompt("Insira o número de empates"));
+	var derrotas = parseInt(prompt("Insira o número de derrotas"));
+
+	//calculando o aproveitamento do time assumindo um campeonato brasileiro inteiro jogado ;) 
+	aproveitamento = (vitorias*3+empates)*100/((vitorias+empates+derrotas)*3)
+
+	document.write("<br> Seu time fez ", vitorias*3+empates," pontos. <br> Com o aproveitamento de ", aproveitamento, "%");
+
+	if (aproveitamento<50) {
+		document.write("o seu time tem um aproveitamento pior que o ano passado");
+	} else if (aproveitamento == 50) {
+		document.write("o seu time tem um aproveitamento igual ao do ano passado");
+	}
+	else{
+		document.write("o seu time tem um aproveitamento melhor que o ano passado");
+	}
+</script>

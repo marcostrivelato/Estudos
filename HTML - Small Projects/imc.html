@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h1>Descubra qual seu IMC</h1>
+	
+<script>
+	function calcularIMC(peso,altura){
+		return peso/(altura*altura);
+	}
+
+	var peso = prompt("Qual seu peso?");
+	var altura = prompt("Qual sua altura?");
+	var imc = calcularIMC(peso,altura);
+
+	if (imc<18.5) {
+		document.write("<br>Seu IMC é ", imc, " seu IMC está abaixo do recomendado pela OMS");
+	} else if (imc<25) {
+		document.write("<br>Seu IMC é ", imc, " seu IMC está dentro do recomendado pela OMS");
+	} else if (imc<30){
+		document.write("<br>Seu IMC é ", imc, " seu IMC está acima do recomendado pela OMS, classificado como sobrepeso");
+	} else {
+		document.write("<br>Seu IMC é ", imc, " seu IMC está acima do recomendado pela OMS, classificado como obesidade");
+	}
+
+</script>

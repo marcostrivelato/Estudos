@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+
+<h1>Quantas gerações de brasileirinhos até o ano escolhido?</h1>
+	
+<script>
+	function calcularGeracoes(ano){
+		var anobase=1500;
+		var geracoes;
+
+		geracoes = Math.round((ano - anobase)/28);
+		return geracoes;
+	}
+
+	var ano = prompt("Qual ano deseja saber o número de gerações?");
+	document.write("<br>O número de gerações de brasileirinhos até o ano de ", ano, " é", calcularGeracoes(ano));
+</script>
