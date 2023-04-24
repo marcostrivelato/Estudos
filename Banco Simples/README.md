@@ -1,0 +1,3 @@
+[PT] Este é um projeto simples de aprendizado de orientação a objeto em python. Um banco com dois objetos, conta e pessoa. No objeto conta temos as funções para consultar saldo, sacar, depositar e transferir, além dos getters e setters. No objeto pessoa apenas temos os atributos do cliente.
+
+[EN] This is a simple project with the objective of learnig object oriented programming on python. It's a simple bank structure with two objects client (pessoa) and account (conta). In the account object we have funtions to consult balance, doing deposit, transfers and withdraw. In the client object we have only the client atributes
