@@ -1,0 +1,1 @@
+This are some queries to practice [PL/pgSQL — SQL Procedural Language](https://www.postgresql.org/docs/current/plpgsql.html). The content here is mainly creating and calling functions and procedures, and all that we can do with them like looping and conditionals. 
